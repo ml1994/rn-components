@@ -19,7 +19,7 @@ const defaultProps = {
 class MyHeader extends Component {
   returnFun () {
     const { dispatch, isLoginPage } = this.props
-    if (isLoginPage === true || this.props.title=='查看错题') {
+    if (isLoginPage === true){
       const resetAction = NavigationActions.reset({// 未登录状态返回，返回到home页
         index: 0,
         actions: [
